@@ -1,0 +1,7 @@
+---
+name: libevent
+
+dependencies:
+
+files:
+  - libevent/**/*

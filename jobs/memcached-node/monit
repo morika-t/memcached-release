@@ -1,0 +1,5 @@
+check process memcached-server
+  with pidfile /var/vcap/sys/run/memcached-node/memcached.pid
+  start program "/var/vcap/jobs/memcached-node/bin/memcached_ctl start" with timeout 20 seconds
+  stop program "/var/vcap/jobs/memcached-node/bin/memcached_ctl stop" with timeout 20 seconds
+  group vcap

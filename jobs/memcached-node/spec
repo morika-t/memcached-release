@@ -1,0 +1,24 @@
+---
+name: memcached-node
+templates:
+  memcached_ctl.erb: bin/memcached_ctl
+
+packages:
+  - memcached
+
+properties:
+  memcached-node.memory:
+    description: 'Max memory reserved for memcached in MB.'
+    default: 128
+  memcached-node.listen:
+    description: 'Specify which IP address to listen on.'
+    default: 0.0.0.0
+  memcached-node.port:
+    description: 'Connection port.'
+    default: 11211
+  memcached-node.user:
+    description: 'User who runs the server.'
+    default: nobody
+  memcached-node.max_simultaneous_connections:
+    desciption: 'Limit the number of simultaneous incoming connections.'
+    default: 1024

@@ -1,0 +1,13 @@
+# abort script on any command that exits with a non zero value
+
+export DEP_PREFIX=/var/vcap/packages/libevent
+export PREFIX=${BOSH_INSTALL_TARGET}
+export PATH=$PREFIX/bin:$PATH
+
+(
+  set -e
+  tar xvzf memcached/memcached-1.4.25.tar.gz
+  cd memcached-1.4.25
+  ./configure --prefix=$DEP_PREFIX
+  make install prefix=$PREFIX
+)

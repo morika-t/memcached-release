@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+
+set -e
+
+JOB_DIR=/var/vcap/jobs/memcached-node
+PACKAGE_DIR=$JOB_DIR/packages/memcached
+RUN_DIR=/var/vcap/sys/run/memcached-node
+LOG_DIR=/var/vcap/sys/log/memcached-node
+PID_FILE=$RUN_DIR/memcached.pid
+
+case $1 in
+
+  start)
+    mkdir -p $RUN_DIR $LOG_DIR
+    chown vcap:vcap $RUN_DIR $LOG_DIR
+
+    exec chpst -u vcap:vcap $PACKAGE_DIR/bin/memcached \
+      -v \
+      -d \
+      -P $PID_FILE \
+      -m <%= p('memcached-node.memory') %> \
+      -p <%= p('memcached-node.port') %> \
+      -U <%= p('memcached-node.port') %> \
+      -u <%= p('memcached-node.user') %> \
+      -l <%= p('memcached-node.listen') %> \
+      -c <%= p('memcached-node.max_simultaneous_connections') %>
+    ;;
+
+  stop)
+    kill $(cat $PID_FILE)
+    ;;
+
+  *)
+    echo "Usage: memcached_ctl {start|stop}"
+    ;;
+
+esac

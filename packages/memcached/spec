@@ -1,0 +1,8 @@
+---
+name: memcached
+
+dependencies:
+  - libevent
+
+files:
+  - memcached/**/*

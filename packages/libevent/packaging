@@ -1,0 +1,11 @@
+export PREFIX=${BOSH_INSTALL_TARGET}
+export PATH=$PREFIX/bin:$PATH
+
+
+(
+  set -e
+  tar xvzf libevent/libevent-2.0.22-stable.tar.gz
+  cd libevent-2.0.22-stable
+  ./configure --prefix=$PREFIX
+  make install prefix=$PREFIX
+)
