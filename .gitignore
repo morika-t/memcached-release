@@ -1,3 +1,4 @@
 .dev_builds/
+config/dev.yml
 dev_releases/
 config/secret.yml
