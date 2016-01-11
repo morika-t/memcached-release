@@ -1,0 +1,3 @@
+[submodule "src/github.com/tscolari/cf-broker-api"]
+	path = src/github.com/tscolari/cf-broker-api
+	url = git@github.com:tscolari/cf-broker-api.git
