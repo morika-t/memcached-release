@@ -2,3 +2,9 @@
 config/dev.yml
 dev_releases/
 config/secret.yml
+
+src/github.com/vito/gosub/
+src/github.com/codegangsta/cli/
+
+/bin
+/pkg
