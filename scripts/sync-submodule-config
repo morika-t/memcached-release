@@ -7,7 +7,11 @@ go get github.com/vito/gosub
 go install github.com/vito/gosub
 
 {
-  gosub list
+  gosub list \
+    -app github.com/tscolari/cf-broker-api/... \
+    -test github.com/tscolari/cf-broker-api/... \
+    -test github.com/tscolari/memcached-broker/... \
+    -app github.com/tscolari/memcached-broker/...
 } > /tmp/packages
 
 cat /tmp/packages | xargs gosub sync

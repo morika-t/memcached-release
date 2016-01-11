@@ -1,3 +1,56 @@
+[submodule "src/github.com/julienschmidt/httprouter"]
+	path = src/github.com/julienschmidt/httprouter
+	url = https://github.com/julienschmidt/httprouter
+	branch = master
+[submodule "src/github.com/manveru/faker"]
+	path = src/github.com/manveru/faker
+	url = https://github.com/manveru/faker
+	branch = master
+[submodule "src/github.com/raphael/goa"]
+	path = src/github.com/raphael/goa
+	url = https://github.com/raphael/goa
+	branch = master
+[submodule "src/github.com/zach-klippenstein/goregen"]
+	path = src/github.com/zach-klippenstein/goregen
+	url = https://github.com/zach-klippenstein/goregen
+	branch = master
 [submodule "src/github.com/tscolari/cf-broker-api"]
 	path = src/github.com/tscolari/cf-broker-api
-	url = git@github.com:tscolari/cf-broker-api.git
+	url = https://github.com/tscolari/cf-broker-api
+	branch = master
+[submodule "src/github.com/tscolari/memcached-broker"]
+	path = src/github.com/tscolari/memcached-broker
+	url = https://github.com/tscolari/memcached-broker
+	branch = master
+[submodule "src/github.com/alecthomas/units"]
+	path = src/github.com/alecthomas/units
+	url = https://github.com/alecthomas/units
+	branch = master
+[submodule "src/github.com/mattn/go-colorable"]
+	path = src/github.com/mattn/go-colorable
+	url = https://github.com/mattn/go-colorable
+	branch = master
+[submodule "src/gopkg.in/alecthomas/kingpin.v2"]
+	path = src/gopkg.in/alecthomas/kingpin.v2
+	url = https://gopkg.in/alecthomas/kingpin.v2
+	branch = master
+[submodule "src/gopkg.in/yaml.v2"]
+	path = src/gopkg.in/yaml.v2
+	url = https://gopkg.in/yaml.v2
+	branch = master
+[submodule "src/github.com/alecthomas/template"]
+	path = src/github.com/alecthomas/template
+	url = https://github.com/alecthomas/template
+	branch = master
+[submodule "src/golang.org/x/net"]
+	path = src/golang.org/x/net
+	url = https://go.googlesource.com/net
+	branch = master
+[submodule "src/gopkg.in/inconshreveable/log15.v2"]
+	path = src/gopkg.in/inconshreveable/log15.v2
+	url = https://gopkg.in/inconshreveable/log15.v2
+	branch = master
+[submodule "src/gopkg.in/tylerb/graceful.v1"]
+	path = src/gopkg.in/tylerb/graceful.v1
+	url = https://gopkg.in/tylerb/graceful.v1
+	branch = master

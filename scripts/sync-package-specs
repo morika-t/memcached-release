@@ -35,6 +35,8 @@ function sync_package() {
   )
 }
 
+sync_package memcached-broker -app github.com/tscolari/memcached-broker
+
 wait
 
 git diff --name-only packages/*/spec
