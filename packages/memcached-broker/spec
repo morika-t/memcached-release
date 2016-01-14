@@ -14,10 +14,12 @@ files:
   - github.com/raphael/goa/*.go # gosub
   - github.com/raphael/goa/design/*.go # gosub
   - github.com/raphael/goa/examples/cellar/swagger/*.go # gosub
+  - github.com/tscolari/cf-broker-api/common/controllers/*.go # gosub
   - github.com/tscolari/memcached-broker/*.go # gosub
   - github.com/tscolari/memcached-broker/app/*.go # gosub
   - github.com/tscolari/memcached-broker/config/*.go # gosub
   - github.com/tscolari/memcached-broker/controllers/*.go # gosub
+  - github.com/tscolari/memcached-broker/storage/*.go # gosub
   - github.com/zach-klippenstein/goregen/*.go # gosub
   - golang.org/x/net/context/*.go # gosub
   - golang.org/x/net/netutil/*.go # gosub
